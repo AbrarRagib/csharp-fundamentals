@@ -76,29 +76,58 @@ namespace Hello
 
 
 
-/*
-            //Console.WriteLine(friends);
+            /*
+                        //Console.WriteLine(friends);
 
-            String fullName = "Bro Code";
-            String phoneNumber = "123-456-7890";
+                        String fullName = "Bro Code";
+                        String phoneNumber = "123-456-7890";
 
-            //fullName = fullName.ToUpper();
-            //fullName = fullName.ToLower();
-            //Console.WriteLine(fullName);
+                        //fullName = fullName.ToUpper();
+                        //fullName = fullName.ToLower();
+                        //Console.WriteLine(fullName);
 
-            //phoneNumber = phoneNumber.Replace("-","");
-            //Console.WriteLine(phoneNumber);
+                        //phoneNumber = phoneNumber.Replace("-","");
+                        //Console.WriteLine(phoneNumber);
 
-            //String userName = fullName.Insert(0,"Mr.");
-            //Console.WriteLine(userName);
+                        //String userName = fullName.Insert(0,"Mr.");
+                        //Console.WriteLine(userName);
 
-            //Console.WriteLine(fullName.Length);
+                        //Console.WriteLine(fullName.Length);
 
-            String firstName = fullName.Substring(0, 3);
-            String lastName = fullName.Substring(4, 4);
+                        String firstName = fullName.Substring(0, 3);
+                        String lastName = fullName.Substring(4, 4);
 
-            Console.WriteLine(firstName);
-            Console.WriteLine(lastName);*/
+                        Console.WriteLine(firstName);
+                        Console.WriteLine(lastName);*/
+
+
+            //If 
+            Console.WriteLine("Enter your age:");
+            int age = Convert .ToInt32(Console.ReadLine());
+
+            if (age <= 0)
+            {
+                Console.WriteLine("You haven't been born yet.");
+            }
+            else if (age >= 100)
+            {
+                Console.WriteLine("Your are an Oldman");
+            }
+            else if (age >= 18)
+            {
+                Console.WriteLine("You are an adult.");
+            }
+            else if (age >= 13)
+            {
+                Console.WriteLine("You are a teenager.");
+            }
+            
+            else
+            {
+                Console.WriteLine("You are a child.");
+            }
+
+            Console.ReadKey();
 
 
 
