@@ -60,7 +60,7 @@ namespace Hello
 
 
             //Arrithmatic Operations
-            int friends = 5;
+            //int friends = 5;
             //friends = friends + 1;
             //friends += 1; // Incrementing friends by 1
             //friends++; // Incrementing friends by 1
@@ -70,15 +70,19 @@ namespace Hello
 
             // friends = friends / 2;
             //friends /= 2; // Dividing friends by 2S
-
-            int remainder = friends % 2;
-            Console.WriteLine(remainder);
+            /*
+                        int remainder = friends % 2;
+                        Console.WriteLine(remainder);*/
 
 
 
 
             //Console.WriteLine(friends);
 
+            string fullname = "Bro code";
+            string phonenumber = "123-456-7890";
+            phonenumber = phonenumber.Replace("-","");
+            Console.WriteLine(phonenumber);
             Console.ReadKey();
 
 
