@@ -221,23 +221,23 @@ namespace Hello
                         }
                         Console.WriteLine("Hello " + name);
                         Console.ReadKey();*/
-/*
-            Console.WriteLine("Tell me the ...");
-            string tell = Console.ReadLine();
+            /*
+                        Console.WriteLine("Tell me the ...");
+                        string tell = Console.ReadLine();
 
-            while (tell == "")
-            {
-                Console.Write("Tell me first: ");
-                tell = Console.ReadLine();
-            }
-            Console.WriteLine("Ok " + tell);
-            Console.ReadKey();*/
+                        while (tell == "")
+                        {
+                            Console.Write("Tell me first: ");
+                            tell = Console.ReadLine();
+                        }
+                        Console.WriteLine("Ok " + tell);
+                        Console.ReadKey();*/
 
-/*
-            while (1 == 1) //
-            {
-                Console.WriteLine("Stuck in an infinite loop! Press Ctrl+C to exit.");
-            }*/
+            /*
+                        while (1 == 1) //
+                        {
+                            Console.WriteLine("Stuck in an infinite loop! Press Ctrl+C to exit.");
+                        }*/
 
 
 
@@ -257,7 +257,28 @@ namespace Hello
             {
                 Console.WriteLine("hi " + i);
             }
+
 */
+
+
+            Console.WriteLine("How many rows?: ");
+            int rows = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("How many columns?: ");
+            int columns = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the character to fill the grid: ");
+            string symbol = Console.ReadLine();
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write(symbol);
+                }
+                Console.WriteLine(); // Move to the next line after each row
+            }
+
         }
     }
 }
