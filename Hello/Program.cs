@@ -233,8 +233,31 @@ namespace Hello
             Console.WriteLine("Ok " + tell);
             Console.ReadKey();*/
 
+/*
+            while (1 == 1) //
+            {
+                Console.WriteLine("Stuck in an infinite loop! Press Ctrl+C to exit.");
+            }*/
 
 
+
+
+
+
+            //For Loops
+
+            /*for (int i = 0; i <= 100; i++)
+            {
+                Console.WriteLine("hi " + i);
+            }
+*/
+
+
+            /*for (int i = 10; i > 0; i--)
+            {
+                Console.WriteLine("hi " + i);
+            }
+*/
         }
     }
 }
