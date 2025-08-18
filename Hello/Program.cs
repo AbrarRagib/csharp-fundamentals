@@ -129,16 +129,64 @@ namespace Hello
 
             Console.ReadKey();*/
 
+            /*
+                        Console.WriteLine("Please enter your name: ");
+                        string name = Console.ReadLine();
+                        if (name == "") //!= null 
+                        {
+                            Console.WriteLine("You did not enter your name!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Hello " + name);
+                        }*/
 
-            Console.WriteLine("Please enter your name: ");
-            string name = Console.ReadLine();
-            if (name == "") //!= null 
+
+            //Switch Case
+
+            Console.WriteLine("What day is it today?");
+            String day = Console.ReadLine();
+
+            switch (day)
             {
-                Console.WriteLine("You did not enter your name!");
-            }
-            else
-            {
-                Console.WriteLine("Hello " + name);
+                case "Monday":
+                case "monday":
+                    Console.WriteLine("It's Monday, the start of the week!");
+                    break;
+
+                case "Tuesday":
+                case "tuesday":
+                    Console.WriteLine("It's Tuesday, keep going!");
+                    break;
+
+                case "Wednesday":
+                case "wednesday":
+                    Console.WriteLine("It's Wednesday, we're halfway through!");
+                    break;
+
+                case "Thursday":
+                case "thursday":
+                    Console.WriteLine("It's Thursday, almost the weekend!");
+                    break;
+
+                case "Friday":
+                case "friday":
+                    Console.WriteLine("It's Friday, the weekend is near!");
+                    break;
+
+                case "Saturday":
+                case "saturday":
+                    Console.WriteLine("It's Saturday, time to relax!");
+                    break;
+
+                case "Sunday":
+                case "sunday":
+                    Console.WriteLine("It's Sunday, enjoy your day!");
+                    break;
+
+                default:
+                    Console.WriteLine("That's not a valid day of the week.");
+                    break;
             }
 
 
