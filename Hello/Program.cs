@@ -260,24 +260,88 @@ namespace Hello
 
 */
 
+            /*
+                        Console.WriteLine("How many rows?: ");
+                        int rows = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("How many rows?: ");
-            int rows = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("How many columns?: ");
+                        int columns = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("How many columns?: ");
-            int columns = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the character to fill the grid: ");
+                        string symbol = Console.ReadLine();
 
-            Console.WriteLine("Enter the character to fill the grid: ");
-            string symbol = Console.ReadLine();
+                        for (int i = 0; i < rows; i++)
+                        {
+                            for (int j = 0; j < columns; j++)
+                            {
+                                Console.Write(symbol);
+                            }
+                            Console.WriteLine(); // Move to the next line after each row
+                        }*/
 
-            for (int i = 0; i < rows; i++)
+            /*int rows = 5; // Number of rows
+
+            for (int i = 1; i <= rows; i++)
             {
-                for (int j = 0; j < columns; j++)
+                for (int j = 1; j <= i; j++)
                 {
-                    Console.Write(symbol);
+                    Console.Write("* ");
                 }
-                Console.WriteLine(); // Move to the next line after each row
+                Console.WriteLine();
+            }*/
+
+
+            /*for (int i = 1; i <=5; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
             }
+*/
+
+            for (int i = 0; i <= 4; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+
+
+            Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Console.ReadKey();
 
         }
     }
