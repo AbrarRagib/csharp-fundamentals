@@ -143,7 +143,7 @@ namespace Hello
 
 
             //Switch Case
-
+/*
             Console.WriteLine("What day is it today?");
             String day = Console.ReadLine();
 
@@ -187,7 +187,23 @@ namespace Hello
                 default:
                     Console.WriteLine("That's not a valid day of the week.");
                     break;
+            }*/
+
+            //Logical
+
+            Console.WriteLine("What's the temparature today?");
+            double temp = Convert.ToDouble(Console.ReadLine());
+
+            if (temp >= 10 && temp <=25)
+            {
+                Console.WriteLine("It's warm outgside!");
             }
+            else if (temp <= -50 || temp >= 50)
+            {
+                Console.WriteLine("Do not go outside!4");
+            }
+
+
 
 
         }
