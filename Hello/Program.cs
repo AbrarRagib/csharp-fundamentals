@@ -143,66 +143,95 @@ namespace Hello
 
 
             //Switch Case
-/*
-            Console.WriteLine("What day is it today?");
-            String day = Console.ReadLine();
+            /*
+                        Console.WriteLine("What day is it today?");
+                        String day = Console.ReadLine();
 
-            switch (day)
-            {
-                case "Monday":
-                case "monday":
-                    Console.WriteLine("It's Monday, the start of the week!");
-                    break;
+                        switch (day)
+                        {
+                            case "Monday":
+                            case "monday":
+                                Console.WriteLine("It's Monday, the start of the week!");
+                                break;
 
-                case "Tuesday":
-                case "tuesday":
-                    Console.WriteLine("It's Tuesday, keep going!");
-                    break;
+                            case "Tuesday":
+                            case "tuesday":
+                                Console.WriteLine("It's Tuesday, keep going!");
+                                break;
 
-                case "Wednesday":
-                case "wednesday":
-                    Console.WriteLine("It's Wednesday, we're halfway through!");
-                    break;
+                            case "Wednesday":
+                            case "wednesday":
+                                Console.WriteLine("It's Wednesday, we're halfway through!");
+                                break;
 
-                case "Thursday":
-                case "thursday":
-                    Console.WriteLine("It's Thursday, almost the weekend!");
-                    break;
+                            case "Thursday":
+                            case "thursday":
+                                Console.WriteLine("It's Thursday, almost the weekend!");
+                                break;
 
-                case "Friday":
-                case "friday":
-                    Console.WriteLine("It's Friday, the weekend is near!");
-                    break;
+                            case "Friday":
+                            case "friday":
+                                Console.WriteLine("It's Friday, the weekend is near!");
+                                break;
 
-                case "Saturday":
-                case "saturday":
-                    Console.WriteLine("It's Saturday, time to relax!");
-                    break;
+                            case "Saturday":
+                            case "saturday":
+                                Console.WriteLine("It's Saturday, time to relax!");
+                                break;
 
-                case "Sunday":
-                case "sunday":
-                    Console.WriteLine("It's Sunday, enjoy your day!");
-                    break;
+                            case "Sunday":
+                            case "sunday":
+                                Console.WriteLine("It's Sunday, enjoy your day!");
+                                break;
 
-                default:
-                    Console.WriteLine("That's not a valid day of the week.");
-                    break;
-            }*/
+                            default:
+                                Console.WriteLine("That's not a valid day of the week.");
+                                break;
+                        }*/
 
             //Logical
+            /*
+                        Console.WriteLine("What's the temparature today?");
+                        double temp = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("What's the temparature today?");
-            double temp = Convert.ToDouble(Console.ReadLine());
+                        if (temp >= 10 && temp <=25)
+                        {
+                            Console.WriteLine("It's warm outgside!");
+                        }
+                        else if (temp <= -50 || temp >= 50)
+                        {
+                            Console.WriteLine("Do not go outside!4");
 
-            if (temp >= 10 && temp <=25)
+                        }
+
+             */
+
+
+
+
+            //WhileLoop
+            /*
+                        Console.WriteLine("Enter Your Name: ");
+                        string name = Console.ReadLine();
+
+                        while (name == "")
+                        {
+                            Console.Write("Enter Your Name: ");
+                            name = Console.ReadLine();  
+                        }
+                        Console.WriteLine("Hello " + name);
+                        Console.ReadKey();*/
+/*
+            Console.WriteLine("Tell me the ...");
+            string tell = Console.ReadLine();
+
+            while (tell == "")
             {
-                Console.WriteLine("It's warm outgside!");
+                Console.Write("Tell me first: ");
+                tell = Console.ReadLine();
             }
-            else if (temp <= -50 || temp >= 50)
-            {
-                Console.WriteLine("Do not go outside!4");
-            }
-
+            Console.WriteLine("Ok " + tell);
+            Console.ReadKey();*/
 
 
 
