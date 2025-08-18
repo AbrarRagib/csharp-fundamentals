@@ -76,7 +76,7 @@ namespace Hello
 
 
 
-
+/*
             //Console.WriteLine(friends);
 
             String fullName = "Bro Code";
@@ -98,7 +98,7 @@ namespace Hello
             String lastName = fullName.Substring(4, 4);
 
             Console.WriteLine(firstName);
-            Console.WriteLine(lastName);
+            Console.WriteLine(lastName);*/
 
 
 
