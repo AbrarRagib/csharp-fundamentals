@@ -102,7 +102,7 @@ namespace Hello
 
 
             //If 
-            Console.WriteLine("Enter your age:");
+            /*Console.WriteLine("Enter your age:");
             int age = Convert .ToInt32(Console.ReadLine());
 
             if (age <= 0)
@@ -127,10 +127,19 @@ namespace Hello
                 Console.WriteLine("You are a child.");
             }
 
-            Console.ReadKey();
+            Console.ReadKey();*/
 
 
-
+            Console.WriteLine("Please enter your name: ");
+            string name = Console.ReadLine();
+            if (name == "") //!= null 
+            {
+                Console.WriteLine("You did not enter your name!");
+            }
+            else
+            {
+                Console.WriteLine("Hello " + name);
+            }
 
 
         }
