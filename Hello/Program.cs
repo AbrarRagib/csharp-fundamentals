@@ -315,7 +315,7 @@ namespace Hello
 
 
 
-            for (int i = 0; i <= 4; i++)
+            /*for (int i = 0; i <= 4; i++)
             { 
               for (int j = 0; j <= i; j++)
                 {
@@ -331,11 +331,180 @@ namespace Hello
                     Console.Write("* ");
                 }
                 Console.WriteLine();
+            }*/
+
+
+
+
+
+
+
+            /*
+
+
+
+                        //Nubmer Guessing Game
+                        Random random = new Random();
+                        bool playAgain = true;
+                        int min = 1;
+                        int max = 100;
+                        int guess;
+                        int number;
+                        int guesses;
+                        String response;
+
+                        while (playAgain)
+                        {
+                            guess = 0;
+                            guesses = 0;
+                            response = "";
+                            number = random.Next(min, max + 1);
+
+                            while (guess != number)
+                            {
+                                Console.WriteLine("Guess a number between " + min + " - " + max + " : ");
+                                guess = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine("Guess: " + guess);
+
+                                if (guess > number)
+                                {
+                                    Console.WriteLine(guess + " is to high!");
+                                }
+                                else if (guess < number)
+                                {
+                                    Console.WriteLine(guess + " is to low!");
+                                }
+                                guesses++;
+                            }
+                            Console.WriteLine("Number: " + number);
+                            Console.WriteLine("YOU WIN!");
+                            Console.WriteLine("Guesses: " + guesses);
+
+                            Console.WriteLine("Would you like to play again (Y/N): ");
+                            response = Console.ReadLine();
+                            response = response.ToUpper();
+
+                            if (response == "Y")
+                            {
+                                playAgain = true;
+                            }
+                            else
+                            {
+                                playAgain = false;
+                            }
+                        }
+
+                        Console.WriteLine("Thanks for playing! ... I guess");
+
+                        Console.ReadKey();
+            */
+
+
+
+
+
+
+/*
+            Random random = new Random();
+            bool playAgain = true;
+            String player;
+            String computer;
+            String answer;
+
+            while (playAgain)
+            {
+                player = "";
+                computer = "";
+                answer = "";
+
+                while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
+                {
+                    Console.Write("Enter ROCK, PAPER, or SCISSORS: ");
+                    player = Console.ReadLine();
+                    player = player.ToUpper();
+                }
+
+
+                switch (random.Next(1, 4))
+                {
+                    case 1:
+                        computer = "ROCK";
+                        break;
+                    case 2:
+                        computer = "PAPER";
+                        break;
+                    case 3:
+                        computer = "SCISSORS";
+                        break;
+                }
+
+                Console.WriteLine("Player: " + player);
+                Console.WriteLine("Computer: " + computer);
+
+                switch (player)
+                {
+                    case "ROCK":
+                        if (computer == "ROCK")
+                        {
+                            Console.WriteLine("It's a draw!");
+                        }
+                        else if (computer == "PAPER")
+                        {
+                            Console.WriteLine("You lose!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("You win!");
+                        }
+                        break;
+                    case "PAPER":
+                        if (computer == "ROCK")
+                        {
+                            Console.WriteLine("You win!");
+                        }
+                        else if (computer == "PAPER")
+                        {
+                            Console.WriteLine("It's a draw!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("You lose!");
+                        }
+                        break;
+                    case "SCISSORS":
+                        if (computer == "ROCK")
+                        {
+                            Console.WriteLine("You lose!");
+                        }
+                        else if (computer == "PAPER")
+                        {
+                            Console.WriteLine("You win!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("It's a draw!");
+                        }
+                        break;
+                }
+
+                Console.Write("Would you like to play again (Y/N): ");
+                answer = Console.ReadLine();
+                answer = answer.ToUpper();
+
+                if (answer == "Y")
+                {
+                    playAgain = true;
+                }
+                else
+                {
+                    playAgain = false;
+                }
+
             }
 
+            Console.WriteLine("Thanks for playing!");
 
-
-
+            Console.ReadKey();*/
 
 
 
