@@ -300,8 +300,31 @@ namespace Hello
                 Console.WriteLine();
             }
 */
+            /*
+                        for (int i = 0; i <= 4; i++)
+                        {
+                            for (int j = 0; j <= i; j++)
+                            {
+                                Console.Write("* ");
+                            }
+                            Console.WriteLine();
+                        }
+
+
+                        Console.ReadKey();*/
+
+
 
             for (int i = 0; i <= 4; i++)
+            { 
+              for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+
+            for (int i = 4; i >= 0; i--)
             {
                 for (int j = 0; j <= i; j++)
                 {
@@ -309,12 +332,6 @@ namespace Hello
                 }
                 Console.WriteLine();
             }
-
-
-            Console.ReadKey();
-
-
-
 
 
 
