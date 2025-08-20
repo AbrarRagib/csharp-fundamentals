@@ -579,19 +579,57 @@ namespace Hello
 
             //Arrays
 
+            /*
+                       String[] cars = { "BMW", "Audi", "Tesla", "Toyota", "Tata", };
+                        cars[0] = "Mercedes";
 
-           String[] cars = { "BMW", "Audi", "Tesla", "Toyota", "Tata", };
-            cars[0] = "Mercedes";
-
-           Console.WriteLine(cars[0]);
-           Console.WriteLine(cars[1]);
-           Console.WriteLine(cars[2]);
-           Console.WriteLine(cars[3]);
-           Console.WriteLine(cars[4]);
-           Console.WriteLine("Total Cars: " + cars.Length);
+                       Console.WriteLine(cars[0]);
+                       Console.WriteLine(cars[1]);
+                       Console.WriteLine(cars[2]);
+                       Console.WriteLine(cars[3]);
+                       Console.WriteLine(cars[4]);
+                       Console.WriteLine("Total Cars: " + cars.Length);
 
 
+                        Console.ReadKey()
+
+
+            */
+            /*
+
+                        String[] cars = { "BMW", "Audi", "Tesla", "Toyota", "Tata", };
+
+                        for (int i = 0; i < cars.Length; i++)
+                        {
+                            Console.WriteLine(cars[i]);
+                        }
+
+                        Console.ReadLine();*/
+
+
+            //ForEash Loop
+
+            String[] cars = { "BMW", "Audi", "Tesla", "Toyota", "Tata", };
+
+            foreach (string car in cars)
+            {
+                Console.WriteLine(car);
+            }
             Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         }
