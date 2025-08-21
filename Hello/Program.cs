@@ -924,3 +924,55 @@ namespace MyFirstProgram
 
 
 
+
+
+
+
+
+//Multi-Dimensional Arrays: 
+
+
+using System;
+
+namespace MyFirstPrograme
+{
+    class Programe
+    {
+        static void Main(string[] args)
+        {
+            string[] ford = { "Mustang", "F-150", "Explorer" };
+            string[] chevy = { "Corvette", "Camaro", "Silverado" };
+            string[] toyota = { "Corolla", "Camry", "Rav4" };
+
+            string[,] parkinglot =
+            {
+                {"Mustang", "F-150", "Explorer" },
+                {"Corvette", "Camaro", "Silverado" },
+                {"Corolla", "Camry", "Rav4" }
+            };
+
+            parkinglot[0, 2] = "Fusion";
+            parkinglot[2, 2] = "Land Cruiser";
+            /*
+                        foreach (string car in parkinglot)
+                        {
+                            Console.WriteLine(car);
+                        }*/
+
+            for (int i = 0; i < parkinglot.GetLength(0); i++)
+            {
+                for (int j = 0; j < parkinglot.GetLength(1); j++)
+                {
+                    Console.Write(parkinglot[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+
