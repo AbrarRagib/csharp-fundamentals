@@ -928,7 +928,7 @@ namespace MyFirstProgram
 
 
 
-
+/*
 //Multi-Dimensional Arrays: 
 
 
@@ -953,11 +953,11 @@ namespace MyFirstPrograme
 
             parkinglot[0, 2] = "Fusion";
             parkinglot[2, 2] = "Land Cruiser";
-            /*
+            *//*
                         foreach (string car in parkinglot)
                         {
                             Console.WriteLine(car);
-                        }*/
+                        }*//*
 
             for (int i = 0; i < parkinglot.GetLength(0); i++)
             {
@@ -972,7 +972,36 @@ namespace MyFirstPrograme
 
         }
     }
+}*/
+
+
+
+
+
+using System;
+using System.Runtime.Remoting.Messaging;
+
+namespace MyFirstProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // class = A bundle of related code.
+            //              Can be used as a blueprint to create objects (OOP)
+
+            Messages.Hello();
+            Messages.Waiting();
+            Messages.Bye();
+
+            Console.ReadKey();
+        }
+    }
+
 }
+
+
+
 
 
 
