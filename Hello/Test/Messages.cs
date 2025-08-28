@@ -38,7 +38,7 @@ namespace MyFirstProgram
 
 
 
-
+/*
 using System;
 
 static class Messages
@@ -56,3 +56,4 @@ static class Messages
         Console.WriteLine("Bye! Thanks for visiting");
     }
 }
+*/
