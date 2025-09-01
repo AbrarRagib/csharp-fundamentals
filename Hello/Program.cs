@@ -1351,7 +1351,7 @@ namespace MyFirstProgram
 
 
 
-
+/*
 
 
 
@@ -1398,3 +1398,58 @@ namespace MyFirstProgram
     }
 }
 
+*//*
+
+
+
+
+
+
+
+
+
+
+//Method Overriding
+
+using System;
+
+namespace MyFirstProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // method overriding = child class redefines a method in the parent class
+            //                     same name, same parameters, different body
+            Dog dog = new Dog();
+            Cat cat = new Cat();
+            dog.speak();
+            cat.speak();
+            Console.ReadKey();
+        }
+    }
+
+    class Animal
+    {
+        public virtual void speak()
+        {
+            Console.WriteLine("The animal makes a sound");
+        }
+    }
+    class Dog : Animal
+    {
+        public override void speak()
+        {
+            Console.WriteLine("The dog barks");
+        }
+    }
+
+    class Cat : Animal
+    {
+        public override void speak()
+        {
+           Console.WriteLine("The cat meows");
+        }
+    }
+}
+*/
