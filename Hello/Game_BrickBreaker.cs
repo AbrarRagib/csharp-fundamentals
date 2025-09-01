@@ -16,8 +16,8 @@ namespace MatrixBrickBreaker
         static int paddleX = WIDTH / 2 - PADDLE_WIDTH / 2;
         static double ballX = WIDTH / 2;
         static double ballY = HEIGHT - 6;
-        static double ballDX = 0.3;  // Much slower ball
-        static double ballDY = -0.3;
+        static double ballDX = 0.6;  // Much slower ball
+        static double ballDY = -0.6;
         static bool[,] bricks = new bool[BRICK_ROWS, BRICK_COLS];
         static char[,] brickChars = new char[BRICK_ROWS, BRICK_COLS];
         static int score = 0;
