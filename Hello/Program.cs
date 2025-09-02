@@ -1536,7 +1536,7 @@ namespace MyFirstProgram
 
 
 
-
+/*
 //getters & setters
 
 
@@ -1591,4 +1591,252 @@ namespace MyFirstProgram
         }
 
     }
+}*/
+
+
+
+
+/*
+
+
+//auto implemented properties tutorial example explained
+using System;
+
+namespace MyFirstProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Auto-Implemented properties =  shortcut when no additional logic is required in the property
+            //                                you do not have to define a field for a property,
+            //                                you only have to write get; and/or set; inside the property                             
+
+            Car car = new Car("Porsche");
+
+            Console.WriteLine(car.Model);
+
+            Console.ReadKey();
+        }
+    }
+
+    class Car
+    {
+        public String Model { get; set; }
+
+        public Car(String model)
+        {
+            this.Model = model;
+        }
+    }
 }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//enum
+
+using System;
+
+namespace MyFirstProgram
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            // enums = special "class" that contains a set of named integer constants.
+            //         Use enums when you have values that you know will not change,
+            //         To get the integer value from an item, you must explicitly convert to an int
+
+            //         name = integer
+
+            //Console.WriteLine(Planets.Mercury + " is planet #" + (int)Planets.Mercury);
+            //Console.WriteLine(Planets.Pluto + " is planet #" + (int)Planets.Pluto);
+
+            String name = PlanetRadius.Earth.ToString();
+            int radius = (int)PlanetRadius.Earth;
+            double volume = Volume(PlanetRadius.Earth);
+
+            Console.WriteLine("planet: " + name);
+            Console.WriteLine("radius: " + radius + "km");
+            Console.WriteLine("volume: " + volume + "km^3");
+
+            Console.ReadKey();
+        }
+        public static double Volume(PlanetRadius radius)
+        {
+            double volume = (4.0 / 3.0) * Math.PI * Math.Pow((int)radius, 3);
+            return volume;
+        }
+    }
+    enum Planets
+    {
+        Mercury = 1,
+        Venus = 2,
+        Earth = 3,
+        Mars = 4,
+        Jupiter = 5,
+        Saturn = 6,
+        Uranus = 7,
+        Neptune = 8,
+        Pluto = 9
+    }
+
+    enum PlanetRadius
+    {
+        Mercury = 2439,
+        Venus = 6051,
+        Earth = 6371,
+        Mars = 3389,
+        Jupiter = 69911,
+        Saturn = 58232,
+        Uranus = 25362,
+        Neptune = 24622,
+        Pluto = 1188
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+
+//Generics
+
+
+using System;
+
+namespace MyFirstProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // generic =  "not specific to a particular data type"
+            //            add <T> to: classes, methods, fields, etc.
+            //            allows for code reusability for different data types
+
+            int[] intArray = { 1, 2, 3 };
+            double[] doubleArray = { 1.0, 2.0, 3.0 };
+            String[] stringArray = { "1", "2", "3" };
+
+            displayElements(intArray);
+            displayElements(doubleArray);
+            displayElements(stringArray);
+
+            Console.ReadKey();
+        }
+        public static void displayElements<Thing>(Thing[] array)
+        {
+            foreach (Thing item in array)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Multithreading
+
+
+using System;
+using System.Threading;
+
+namespace MyFirstProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // thread = an execution path of a program
+            //          We can use multiple threads to perform,
+            //          different tasks of our program at the same time.
+            //          Current thread running is "main" thread
+            //          using System.Threading;
+
+            Thread mainThread = Thread.CurrentThread;
+            mainThread.Name = "Main Thread";
+            //Console.WriteLine(mainThread.Name);
+
+            Thread thread1 = new Thread(() => CountDown("Timer #1"));
+            Thread thread2 = new Thread(() => CountUp("Timer #2"));
+
+            thread1.Start();
+            thread2.Start();
+
+            Console.WriteLine(mainThread.Name + " is complete!");
+
+            Console.ReadKey();
+        }
+        public static void CountDown(String name)
+        {
+            for (int i = 10; i >= 0; i--)
+            {
+                Console.WriteLine("Timer #1 : " + i + " seconds");
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("Timer #1 is complete!");
+        }
+        public static void CountUp(String name)
+        {
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("Timer #2 : " + i + " seconds");
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("Timer #2 is complete!");
+        }
+    }
+}
+    
+
+
+
+
