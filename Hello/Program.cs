@@ -1461,7 +1461,7 @@ namespace MyFirstProgram
 
 
 
-
+/*
 
 
 //#C# #polymorphism #tutorial
@@ -1524,3 +1524,4 @@ namespace MyFirstProgram
 }
 
 
+*/
